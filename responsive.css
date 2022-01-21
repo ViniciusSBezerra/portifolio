@@ -1,0 +1,29 @@
+@media (max-width: 425px) {
+    #container main section{
+        flex-direction: column;
+    }
+
+    #container main section figure{
+        width: 250px ;
+        height: auto;
+
+        margin: 0;
+        
+    }
+    #container main section figure .photo{
+        border-radius: 70%;
+        margin-bottom: 2.0rem;
+    }
+   
+
+    #container main section.technology figure{
+        flex-direction: column;
+        
+    }
+
+    #container main section.technology figure section{
+        margin: 0;
+        
+    }
+    
+}
