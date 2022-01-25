@@ -1,4 +1,9 @@
 @media (max-width: 425px) {
+
+    #container .menu nav{
+        display: block;
+    }
+
     #container main section{
         flex-direction: column;
     }
@@ -25,5 +30,6 @@
         margin: 0;
         
     }
+
     
 }
