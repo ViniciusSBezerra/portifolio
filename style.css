@@ -25,8 +25,11 @@
     align-items: center;
     justify-content: right;
 
-    background-color: rgb(241, 241, 245);
+   
 
+}
+#container .menu nav .menu-mobile{
+    display: none;
 }
 
 #container .menu nav ul{

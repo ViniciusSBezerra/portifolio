@@ -1,45 +1,94 @@
-@media (max-width: 425px) {
+@media (max-width: 912px) {
 
-    #container .menu nav{
-      display: none;
+    #container .menu nav ul{
+
+        width: 100%;
+        height: 0;
+
+        top: 70px;
+        right: 0px;
+
+        z-index: 1000;
+
+        display: block;
+        
+        position: absolute;
+
+        transition: .6s;
+
+        background-color: white;
+
+        visibility: hidden;
+        overflow-y: hidden;
+        
     }
 
-    #container .menu  {
-        background-color: rgb(241, 241, 245);
+    #container .menu nav ul li{
+
+        
+        display: flex;
+        align-items: center;
+        
+        height: 50px;
+        width: 100%;
+       
+        border-bottom:  2px solid rgba(0, 0, 0, .05);
+    
+        font-weight: 400;
+        
     }
    
-    #container .menu nav.active {
-        display: flex;
-    }
-
-    #container .menu nav.active  ul{
+    #container .menu nav.active ul{
         height: 100vh;
-        width: 100%;
+        visibility: visible;
+        overflow-y: auto;
         
-        background-color: rgb(241, 241, 245);
-        
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        z-index: 1000; 
     }
 
-    #container .menu nav.active  ul li{
-        margin-top: 15px;
-        border-bottom: 0.1px solid gray;
-        font-weight: 500;
+    #container .menu nav ul a{
+        padding: 1rem 0 1rem 0;
+        margin: 0 1rem;
+       
     }
-    
-    #container .menu div .toogleMenu::after, #container .menu div .toogleMenu::before {
-        content: '';
+
+    #container .menu nav .menu-mobile{
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+    }
+
+    #container .menu nav .menu-mobile .toogle-menu{
+        color: black;
+        width: 20px;
+        border-top: 2px solid;
+        display: block;
+    }
+
+    #container .menu nav .menu-mobile .toogle-menu::after, #container .menu nav .menu-mobile .toogle-menu::before{
+        content: "";
         display: block;
         width: 20px;
         height: 2px;
-        background-color: black;
-        margin-top: 4px;
-        margin-right: 10px;
+        background-color: currentColor;
+        margin-top: 5px;
+        position: relative;
+    }
+
+    #container .menu nav.active .toogle-menu{
+        border-top-color: transparent ;
+    }
+
+    #container .menu nav.active .toogle-menu::before{
+        transform: rotate(135deg);
+    }
+
+    #container .menu nav.active .toogle-menu::after{
+        transform: rotate(-135deg);
+        top:-7px;
     }
 
     #container main section{
@@ -65,3 +114,4 @@
         margin: 0;   
     } 
 }
+
