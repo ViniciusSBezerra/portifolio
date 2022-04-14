@@ -18,6 +18,8 @@
 
         visibility: hidden;
         overflow-y: hidden;
+
+        
     }
 
     #container header nav ul li{
@@ -38,6 +40,8 @@
         overflow-y: auto;
         
         flex-direction: column;
+
+        padding: 1rem;
     }
 
     #container header nav .toogle-menu{
@@ -116,8 +120,5 @@
         object-fit: cover;
     }
 
-
-
-    
 }
 
