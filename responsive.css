@@ -1,7 +1,5 @@
 @media (max-width: 912px) {
-    
-    #container .menu nav ul{
-
+    #container header nav ul {
         width: 100%;
         height: 0;
 
@@ -11,48 +9,38 @@
         z-index: 1000;
 
         display: block;
-        
+
         position: absolute;
 
         transition: .6s;
 
-        background-color: white;
+        background-color: rgb(236, 115, 115); ;
 
         visibility: hidden;
         overflow-y: hidden;
-        
     }
 
-    #container .menu nav ul li{
+    #container header nav ul li{
         width: 100%;
         height: 50px;
-        
-        
+    
         display: flex;
         align-items: center;
         
-        
-       
         border-bottom:  2px solid rgba(0, 0, 0, .05);
     
         font-weight: 400;
-        
     }
-   
-    #container .menu nav.active ul{
+
+    #container header nav.active ul{
         height: 100vh;
         visibility: visible;
         overflow-y: auto;
         
+        flex-direction: column;
     }
 
-    #container .menu nav ul a{
-        padding: 1rem 0 1rem 0;
-        margin: 0 1rem;
-       
-    }
-
-    #container .menu nav .menu-mobile{
+    #container header nav .toogle-menu{
         display: flex;
         padding: 0.5rem 1rem;
         font-size: 1rem;
@@ -60,16 +48,17 @@
         background: none;
         cursor: pointer;
         gap: 0.5rem;
+        
     }
 
-    #container .menu nav .menu-mobile .toogle-menu{
-        color: black;
+    #container header nav .toogle-menu .menu-hamburguer{
+        color: white;
         width: 20px;
         border-top: 2px solid;
         display: block;
     }
 
-    #container .menu nav .menu-mobile .toogle-menu::after, #container .menu nav .menu-mobile .toogle-menu::before{
+    #container header nav .toogle-menu .menu-hamburguer::after{
         content: "";
         display: block;
         width: 20px;
@@ -79,51 +68,56 @@
         position: relative;
     }
 
-    #container .menu nav.active .toogle-menu{
-        border-top-color: transparent ;
+    #container header nav .toogle-menu .menu-hamburguer::before{
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        margin-top: 5px;
+        position: relative;
     }
 
-    #container .menu nav.active .toogle-menu::before{
+    #container header nav.active .toogle-menu .menu-hamburguer{
+        border-top-color: transparent;
+    }
+   
+    #container header nav.active .toogle-menu .menu-hamburguer::before{
         transform: rotate(135deg);
     }
 
-    #container .menu nav.active .toogle-menu::after{
+    #container header nav.active .toogle-menu .menu-hamburguer::after{
         transform: rotate(-135deg);
         top:-7px;
     }
 
-    #container main section{
-
+    #container main .about-me {
         width: 100%;
-        
+        height: auto;
+
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
 
-    #container main section figure{
-        width: 100%;  
-        max-width: 1100px;
-        height: auto;
+    #container main .about-me figure{
+        width: 300px;
+        height: 300px;
+      
     }
 
-    #container main section figure .photo{
-        width: 350px;
-        height: 350px;
-        border-radius: 50%;   
+    #container main .about-me figure .my-photo{
+        
+
+
+        border-radius: 50%;
+        
+        object-fit: cover;
     }
 
-    #container main section  .text p{
-        font-size: 1.2rem;
-        text-align: center;
-        padding: 1rem;
 
-    }
-   
-  
-  
 
-   
+    
 }
 

@@ -1,11 +1,9 @@
 
-function menuHamburguer(){
+function toogleMenu(){
 
-    const nav = document.querySelector("nav")
+    const toogleMenu = document.querySelector('nav');
 
-    nav.classList.toggle('active')
-};
+    toogleMenu.classList.toggle('active');
 
-
-
+}
 

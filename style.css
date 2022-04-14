@@ -1,89 +1,126 @@
-
-
-#container{
+#container {
     width: 100%;
-    
+    max-width: 100%;
+
     height: 100%;
+
 
     display: flex;
     align-items: center;
-    
+
+
     flex-direction: column;
 
 }
 
-#container .menu{
+#container header {
+
     width: 100%;
-    max-width: 1100px;
+    max-width: 100%;
+
     height: 70px;
 
+    background-color: rgb(231, 71, 71);
+
+
     display: flex;
+
     align-items: center;
+
     justify-content: right;
-    
+
+    flex-direction: row;
+
 
 }
 
-#container .menu nav .menu-mobile{
+#container header nav .toogle-menu {
     display: none;
 }
 
-#container .menu nav ul{
+#container header nav ul {
     display: flex;
-    list-style: none;
+
+    align-items: center;
+
+    justify-content: center;
 
     gap: 1rem;
+
+    padding: 1rem;
+
+    list-style: none;
 }
 
-#container .menu nav a.link{
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: black;
+#container header nav ul li:hover {
+    border: 0.5px solid white;
+    padding: .5rem;
+
+    border-radius: 10px;
+
+    background-color: rgb(236, 115, 115);
+
+    margin-bottom: .2rem;
+
+    transition: .3s;
+
 }
 
-#container .menu nav a.link:hover{
-    cursor: pointer;
-    border-bottom: solid 0.5px black;
-    font-size: 1.3rem ;
-    
-}
-
-#container main{
+#container main {
     width: 100%;
-    max-width: 1100px;
+    max-width: 100%;
 
-    margin-top: 20px;
+    height: 100%;
 
     display: flex;
+
     align-items: center;
+
+    justify-content: space-evenly;
 
     flex-direction: column;
+
+    padding: 1rem;
+
 }
 
-#container main section{
+
+#container main .about-me {
     width: 100%;
-    max-width: 1100px;
+    max-width: 100%;
+
+    height: 100vh;
+
 
     display: flex;
+
     align-items: center;
+    justify-content: space-evenly;
 
-    justify-content: space-between;    
+    gap: 1rem;
 
-    gap: 2rem;
+    margin-top: 1rem;
+
 }
 
-#container main section figure{
-    width: 500px;
-    
+#container main .about-me figure {
+    width: 400px;
+    height: 400px;
+
+    border-radius: 0.5rem;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+
+
 }
 
-#container main section figure .photo{
-    width: 400px;
-    height: 400px;
+#container main .about-me figure .my-photo {
+    width: 100%;
+    max-width: 100%;
+
+    height: 100%;
 
     object-fit: cover;
 
@@ -92,150 +129,183 @@
     border-radius: 5px;
 }
 
-#container main section .text{
+#container main .about-me .text {
     width: 100%;
+    max-width: 400px;
+
 
     display: flex;
+
     align-items: center;
     justify-content: center;
+
+    flex-wrap: wrap;
+
+    margin-top: 2rem;
 }
 
-#container main section p{
-
-    font-size: 1.4rem;
-    line-height: 1.4rem;
-
+#container main .about-me .text p{
+    font-size: 1.5rem;
     font-weight: 300;
-    
-    
 }
 
-
-
-#container main section.technology{
-    width: 100%; 
-    max-width: 1100px;
-
-    height: auto;
-
-    margin-top: 3rem; 
-}
-
-#container main section.technology figure{
-    width: 100%;
-    max-width: 1100px;
-    
-    height: auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 3rem;
-}
-
-#container main section.technology figure section{
-    width: 250px;
-    height: auto;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    
-    gap: 2rem;
-   
-}
-
-#container main section.technology figure img{
-    width: 200px;
-    height: auto;
-}
-
-#container main section.technology figure p{
-    font-size: 1.0rem;
-    height: 300px;
-}
-
-#container .projects{
-    width: 100%;
-
-    max-width: 1100px;
-
-    height: auto;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-    
-    flex-direction: column;
-
-    margin-top: 3rem;
-
-    padding: 1rem;
-
-    
-}
-
-#container .projects .project{
-    width: 100%;
-
-    max-width: 1100px;
-
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-}
-
-#container .projects .project p {
-    width: 100%;
-    font-size: 1.2rem;
-    line-height: 1.4rem;
-
-    font-weight: 300;
-
-    word-wrap: break-word;
-}
-
-
-#container  .projects .project .containerImages{
-
-    width: 100%;
-
-    max-width: 1100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin-top: 4rem;
-
-    border: solid .5px rgb(241, 241, 245);
-
-    
-} 
-
-#container .projects .project .containerImages .image{
+#container main .technology {
     width: 100%;
     max-width: 100%;
 
-    border-radius: 2px;
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 1rem;
+
+    flex-wrap: wrap;
+
+    gap: 1rem;
 }
 
-#container .footer{
+#container main .technology .card {
+    width: 300px;
+    height: 500px;
 
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#container main .technology .card .container-image-technology {
+    width: 250px;
+    height: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+#container main .technology .card .image-technology {
     width: 100%;
-    height: 200px;
+    max-width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+#container main .technology .card .description-technology {
+    width: 100%;
+
+    height: 400px;
+
+    font-size: 1.1rem;
+
+    line-height: 1.5rem;
+
+
+}
+
+#container main .projects {
+    width: 100%;
+    max-width: 100%;
+
+    height: 100%;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-
+    flex-direction: column;
     padding: 1rem;
 
-    gap: 3rem    ;
+    margin-bottom: 5rem;
+
+}
+
+#container main .projects .card-project {
+    width: 100%;
+    max-width: 100%;
+
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 1rem;
+}
+
+#container main .projects .card-project .description-project {
+    width: 100%;
+    max-width: 100%;
+
+    height: auto;
+
+    line-height: 1.5rem;
+    font-size: 1.3rem;
+
+
+}
+
+#container main .projects .container-image-project {
+    width: 100%;
+    max-width: 1100px;
+
+    height: 100%;
+
+}
+
+#container main .projects .container-image-project .image-project {
+    width: 100%;
+    max-width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+#container footer {
+    width: 100%;
+
+    height: 100px;
+
+    background-color: rgb(231, 71, 71);
+    ;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+#container footer nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+
+    list-style: none;
+}
+
+#container footer nav ul li:hover {
+    border: 0.5px solid white;
+    padding: .5rem;
+
+    border-radius: 10px;
+
+    background-color: rgb(236, 115, 115);
+
+    margin-bottom: .2rem;
+
+    transition: .3s;
 }
