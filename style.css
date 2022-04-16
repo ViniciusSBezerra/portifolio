@@ -33,6 +33,9 @@
 
 
 }
+#container header nav{
+    margin-right: 1rem;
+}
 
 #container header nav .toogle-menu {
     display: none;
@@ -256,6 +259,10 @@
     max-width: 1100px;
 
     height: 100%;
+
+    border-bottom: solid .2px gray; ;
+
+    margin-bottom: 1rem;
 
 }
 

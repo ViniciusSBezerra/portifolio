@@ -97,12 +97,14 @@
 
     #container main .about-me {
         width: 100%;
-        height: auto;
+        height: 100%;
 
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+
+        margin-bottom: 5rem;
     }
 
     #container main .about-me figure{
