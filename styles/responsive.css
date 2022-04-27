@@ -14,7 +14,7 @@
 
         transition: .6s;
 
-        background-color: rgb(236, 115, 115); ;
+        background-color: var(--open-toogle-menu);
 
         visibility: hidden;
         overflow-y: hidden;
@@ -105,6 +105,9 @@
         flex-direction: column;
 
         margin-bottom: 5rem;
+
+
+        gap: 1rem;
     }
 
     #container main .about-me figure{
