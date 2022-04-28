@@ -11,9 +11,9 @@
     padding: 1rem;
 
     margin-bottom: 5rem;
-
 }
-.projects .name-project{
+
+.projects .name-project {
     font-weight: 100;
 }
 
@@ -31,7 +31,7 @@
     gap: 1rem;
 }
 
-.projects .card-project .description-project {
+.projects .description-project {
     width: 100%;
     max-width: 100%;
 
@@ -41,8 +41,6 @@
     font-size: var(--text-pattern);
 
     font-weight: 300;
-
-
 }
 
 .projects .container-image-project {
@@ -51,10 +49,9 @@
 
     height: 100%;
 
-    border-bottom: solid .2px var(--border-image-color); ;
-
+    border-bottom: solid .2px var(--border-image-color);
+    
     margin-bottom: 1rem;
-
 }
 
 .projects .container-image-project .image-project {
@@ -64,5 +61,4 @@
     height: 100%;
 
     object-fit: cover;
-
 }

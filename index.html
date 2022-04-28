@@ -35,35 +35,13 @@
 
         <main>
             <section class="aboutme" id="aboutme"></section>
-
             <section class="technology" id="technology"></section>
-
             <section class="projects" id="project"></section>
         </main>
 
         <footer id="footer"></footer>
     </div>
-
-    <script>
-
-
-        function toogleMenu() {
-
-            const toogleMenu = document.querySelector('nav');
-
-            toogleMenu.classList.toggle('active');
-
-        }
-
-
-        $(function () {
-            $('#header').load("./pages/Header/header.html");
-            $('#aboutme').load("./pages/aboutme/aboutme.html");
-            $('#technology').load("./pages/technology/technology.html");
-            $('#project').load("./pages/Projects/projects.html");
-            $('#footer').load("./pages/footer/footer.html");
-        });
-    </script>
+<script src="./scripts/script.js"></script>
 
 </body>
 
