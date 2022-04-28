@@ -1,4 +1,4 @@
-.about-me {
+.aboutme {
     width: 100%;
     max-width: 100%;
 
@@ -17,7 +17,7 @@
 
 }
 
-.about-me figure {
+.aboutme figure {
     width: 400px;
     height: 400px;
 
@@ -30,7 +30,7 @@
 
 }
 
-.about-me figure .my-photo {
+.aboutme figure .my-photo {
     width: 100%;
     max-width: 100%;
 
@@ -42,7 +42,7 @@
     border-radius: 5px;
 }
 
-.about-me .text {
+.aboutme .text {
     width: 100%;
     max-width: 400px;
 
@@ -57,7 +57,7 @@
     margin-top: 2rem;
 }
 
-.about-me .text p{
+.aboutme .text p{
     font-size: var(--text-pattern);
     font-weight: 300;
 }
