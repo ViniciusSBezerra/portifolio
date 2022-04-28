@@ -6,19 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-
-
 
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/responsive.css">
 
     <link rel="stylesheet" href="./styles/GlobalStyles.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
 
     <link rel="stylesheet" href="./pages/Header/header.css">
     <link rel="stylesheet" href="./pages/About-Me/aboutMe.css">
@@ -33,7 +33,7 @@
 
 <body>
 
- 
+
 
     <div id="container">
 
@@ -41,26 +41,16 @@
 
         <main>
             <section class="about-me" id="about-me"></section>
-             
+
             <section class="technology" id="technology"></section>
-               
+
             <section class="projects" id="project"></section>
         </main>
 
         <footer id="footer"></footer>
-    </div>  
-      
-    
-    <script>
-        $(function () {
-            $('#header').load("./pages/Header/header.html");
-            $('#about-me').load("./pages/About-me/aboutMe.html");
-            $('#technology').load("./pages/technology/technology.html");
-            $('#project').load("./pages/Projects/projects.html");
-            $('#footer').load("./pages/Footer/footer.html");
-        });
-        
-    </script>
+    </div>
+
+    <script src="./scripts/script.js"></script>
 
 </body>
 
