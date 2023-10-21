@@ -1,0 +1,137 @@
+.content__homepage {
+  max-width: 1336px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  padding: 0 16px;
+}
+
+.home-icon {
+  width: 100%;
+  height: auto;
+
+  max-width: 705px;
+  margin-top: 24px;
+}
+
+.homeicon {
+  display: flex;
+  justify-content: center;
+}
+
+.content__homepage-text-section {
+  text-align: center;
+}
+
+.content__homepage .text {
+  margin-top: 24px;
+}
+
+.container__button {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.social__media-links {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.content__homepage-ancor {
+  width: 100%;
+  max-width: 310px;
+  display: flex;
+  justify-content: center;
+
+  color: #fff;
+  font-size: 20px;
+
+  background-color: var(--secondary-color);
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.content__homepage-text,
+.content__homepage-text-title,
+.content__homepage-text {
+  color: var(--primary-color);
+}
+
+.content__homepage-text-title {
+  font-size: 32px;
+  margin: 8px 0;
+}
+
+.content__homepage-text,
+.content__homepage-text {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.container__tecnologies {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 1rem;
+  padding: 0 16px;
+}
+
+.image-tecnologie {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .container__tecnologies {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content__homepage {
+    flex-direction: row;
+    padding: 0 60px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .content__homepage-text-section {
+    text-align: left;
+  }
+
+  .content__homepage-text-title {
+    font-size: 54px;
+    max-width: 545px;
+  }
+
+  .container__button {
+    max-width: 310px;
+    width: 100%;
+
+    padding: 19px 0;
+  }
+
+  .social__media-links {
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 200px;
+    gap: 20px;
+  }
+
+  .content__homepage-ancor {
+    font-weight: 700;
+  }
+}
