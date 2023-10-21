@@ -1,0 +1,40 @@
+.mobile__header-container {
+  height: 70px;
+
+  justify-content: space-between;
+  display: flex;
+  padding: 0 16px;
+}
+
+.mobile__header-container .mobile__header-logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.mobile__header-logo-text {
+  font-size: 24px;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.mobile__header-trigger {
+  height: 40px;
+}
+
+.container-icon {
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+
+  top: 16px;
+  right: 32px;
+}
+
+.menu-item {
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #445964;
+}

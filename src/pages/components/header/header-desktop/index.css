@@ -1,0 +1,26 @@
+.header__desktop-container {
+  max-width: 1366px;
+
+  height: 110px;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin: 0 auto;
+
+  padding: 0 60px;
+}
+
+.header__desktop-options {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile__header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
