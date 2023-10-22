@@ -89,6 +89,11 @@
   height: auto;
 }
 
+.photo {
+  width: 100%;
+  max-width: 200px;
+}
+
 @media (min-width: 768px) {
   .container__tecnologies {
     grid-template-columns: 1fr 1fr 1fr;
