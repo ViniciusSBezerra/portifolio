@@ -4,6 +4,7 @@ import { HomeIcon } from "../../assets/HomeIcon";
 import { InstagramIcon } from "../../assets/InstagramIcon";
 
 import { LikedinIcon } from "../../assets/LinkedinIcon";
+import { Technologies } from "../components/technologies";
 
 import { Header } from "../components/header";
 import "../home/index.css";
@@ -51,6 +52,8 @@ export const Homepage = () => {
             <HomeIcon />
           </section>
         </div>
+
+        <Technologies />
       </div>
     </>
   );
