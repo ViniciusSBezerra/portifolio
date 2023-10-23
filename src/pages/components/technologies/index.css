@@ -6,15 +6,17 @@
 }
 
 .title {
-  text-align: center;
+  max-height: 1366px;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   color: #445964;
   font-family: Roboto;
   font-size: 32px;
   font-style: normal;
   font-weight: 900;
-  line-height: normal;
-  margin-top: 24px;
-  margin-bottom: 24px;
 }
 
 .text {
@@ -28,4 +30,15 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 54px;
+    height: 110px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
