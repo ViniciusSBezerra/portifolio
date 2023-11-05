@@ -6,13 +6,12 @@ import { InstagramIcon } from "../../assets/InstagramIcon";
 import { LikedinIcon } from "../../assets/LinkedinIcon";
 import { Technologies } from "../components/technologies";
 
-import { Header } from "../components/header";
 import "../home/index.css";
+import { AboutMe } from "../components/about-me";
 
 export const Homepage = () => {
   return (
     <>
-      <Header />
       <div className="container__homepage">
         <div className="content__homepage">
           <section className="text">
@@ -52,6 +51,8 @@ export const Homepage = () => {
             <HomeIcon />
           </section>
         </div>
+
+        <AboutMe />
 
         <Technologies />
       </div>

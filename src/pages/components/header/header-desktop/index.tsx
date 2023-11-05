@@ -9,11 +9,17 @@ export const HeaderDesktop = () => {
       </div>
 
       <ul className="header__desktop-options">
-        <li className="menu-item">Home</li>
-        <li className="menu-item">Sobre</li>
-        <li className="menu-item">Projetos</li>
-        <li className="menu-item">Tecnologias</li>
-        <li className="menu-item">Contato</li>
+        <li className="menu-item">
+          <a className="menu-item" href="#projects">
+            Projetos
+          </a>
+        </li>
+        <li className="menu-item">
+          {" "}
+          <a className="menu-item" href="#tecnologias">
+            Tecnologias
+          </a>{" "}
+        </li>
       </ul>
     </div>
   );

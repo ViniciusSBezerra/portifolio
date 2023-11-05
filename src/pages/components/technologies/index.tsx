@@ -12,7 +12,7 @@ export const Technologies = () => {
     <>
       <h1 className="title">Minhas tecnologias</h1>
 
-      <div className="container__tecnologies">
+      <div id="tecnologias" className="container__tecnologies">
         <div className="image-tecnologie">
           <JavaScriptIcon />
         </div>
