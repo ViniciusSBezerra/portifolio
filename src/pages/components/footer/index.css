@@ -3,11 +3,10 @@
   max-width: 1366px;
   height: 100px;
   display: flex;
-
-  display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+}
 
-  margin-top: 40px;
+.footer .social__media-links {
+  margin-top: 0;
 }
