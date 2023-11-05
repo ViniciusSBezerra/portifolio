@@ -4,9 +4,11 @@
 }
 
 body {
+  padding: 0 16px;
+  display: flex;
+  justify-content: center;
   font-family: Roboto, sans-serif;
   margin: 0;
-  padding: 0 16px;
 }
 
 p,
@@ -25,13 +27,17 @@ button {
 }
 
 ul {
-  list-style-type: none; /* Remove os marcadores padrão (pontos, números, etc.) */
-  margin: 0; /* Remove a margem padrão à esquerda */
-  padding: 0; /* Remove o preenchimento padrão */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-  margin: 0; /* Remove a margem padrão à esquerda */
-  padding: 0; /* Remove o preenchimento padrão */
+  margin: 0;
+  padding: 0;
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }

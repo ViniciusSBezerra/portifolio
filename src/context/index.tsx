@@ -1,7 +1,12 @@
 import { createContext, useContext, useState } from "react";
 
+interface Context {
+  isOpen?: boolean;
+  setIsOpen: boolean;
+  toogleMenu?: () => void;
+}
 // Crie um contexto
-const GlobalContext = createContext({});
+const GlobalContext = createContext<Context>({});
 
 export const useGlobalContext = () => {
   return useContext(GlobalContext);
