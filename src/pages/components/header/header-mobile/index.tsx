@@ -3,10 +3,10 @@ import { Logo } from "../../../../assets/Logo";
 
 import "./index.css";
 import { MenuHamburguerIcon } from "../../../../assets/MenuHamburguerIcon";
-import { useGlobalContext } from "../../../../context";
+import { Context, useGlobalContext } from "../../../../context";
 
 export const MobileHeader = () => {
-  const { isOpen, setIsOpen } = useGlobalContext();
+  const { isOpen, setIsOpen } = useGlobalContext() as Context;
 
   return (
     <div className="mobile__header-container">

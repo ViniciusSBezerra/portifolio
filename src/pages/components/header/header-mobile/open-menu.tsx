@@ -1,9 +1,9 @@
 import { CloseMenuIcon } from "../../../../assets/CloseMenuIcon";
-import { useGlobalContext } from "../../../../context";
+import { Context, useGlobalContext } from "../../../../context";
 import "../index.css";
 
 export const OpenMenu = () => {
-  const { setIsOpen } = useGlobalContext();
+  const { setIsOpen } = useGlobalContext() as Context;
   return (
     <div className="menu-open">
       <ul>

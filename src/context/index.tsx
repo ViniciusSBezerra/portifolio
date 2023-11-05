@@ -1,12 +1,21 @@
-import { createContext, useContext, useState } from "react";
+import {
+  Dispatch,
+  SetStateAction,
+  createContext,
+  useContext,
+  useState,
+} from "react";
 
-interface Context {
+export interface Context {
   isOpen?: boolean;
-  setIsOpen: boolean;
+  setIsOpen: Dispatch<SetStateAction<boolean>>;
   toogleMenu?: () => void;
 }
 // Crie um contexto
-const GlobalContext = createContext<Context>({});
+const GlobalContext: any = createContext<Context>({
+  isOpen: false,
+  setIsOpen: () => {},
+});
 
 export const useGlobalContext = () => {
   return useContext(GlobalContext);
