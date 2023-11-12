@@ -21,22 +21,22 @@ const routes = createBrowserRouter([
     element: <Homepage />,
   },
   {
-    path: "/project/electrolux",
+    path: "/electrolux",
     element: <ElectroluxProject />,
   },
 
   {
-    path: "/project/multilaser",
+    path: "/multilaser",
     element: <MultilaserProject />,
   },
 
   {
-    path: "/project/sauer",
+    path: "/sauer",
     element: <SauerProject />,
   },
 
   {
-    path: "/project/obramax",
+    path: "/obramax",
     element: <ObramaxProject />,
   },
 ]);

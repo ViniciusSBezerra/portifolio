@@ -8,6 +8,7 @@
 }
 
 .footer .social__media-links {
+  max-width: 375px;
   margin-top: 0;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
