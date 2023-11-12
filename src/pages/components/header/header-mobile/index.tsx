@@ -10,10 +10,12 @@ export const MobileHeader = () => {
 
   return (
     <div className="mobile__header-container">
-      <div className="mobile__header-logo">
-        <Logo />
-        <p className="mobile__header-logo-text">Vinicius Souza</p>
-      </div>
+      <a href="/">
+        <div className="mobile__header-logo">
+          <Logo />
+          <p className="mobile__header-logo-text">Vinicius Souza</p>
+        </div>
+      </a>
       <button
         onClick={() => {
           setIsOpen(true);

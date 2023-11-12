@@ -3,17 +3,41 @@ import ReactDOM from "react-dom/client";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import "./reset.css";
 import { Homepage } from "./pages/home/index.tsx";
 import { GlobalProvider } from "./context/index.tsx";
 import { Footer } from "./pages/components/footer/index.tsx";
 
 import { Header } from "./pages/components/header/index.tsx";
+import { ElectroluxProject } from "./pages/projects/Electrolux.tsx";
+import { MultilaserProject } from "./pages/projects/Multilaser.tsx";
+import { SauerProject } from "./pages/projects/Sauer.tsx";
+import { ObramaxProject } from "./pages/projects/Obramax.tsx";
+
+import "./reset.css";
 
 const routes = createBrowserRouter([
   {
     path: "/",
     element: <Homepage />,
+  },
+  {
+    path: "/project/electrolux",
+    element: <ElectroluxProject />,
+  },
+
+  {
+    path: "/project/multilaser",
+    element: <MultilaserProject />,
+  },
+
+  {
+    path: "/project/sauer",
+    element: <SauerProject />,
+  },
+
+  {
+    path: "/project/obramax",
+    element: <ObramaxProject />,
   },
 ]);
 

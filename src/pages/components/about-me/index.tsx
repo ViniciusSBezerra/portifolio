@@ -11,6 +11,8 @@ export const AboutMe = () => {
       {/* <section className="aboutMe">
         <img src="" alt="minha imagem" />
 
+        <h1>vinicius tech</h1>
+
         <p className="aboutMe__text">
           {" "}
           Olá, sou Vinicius Souza, um desenvolvedor web de 23 anos, atualmente
@@ -25,21 +27,30 @@ export const AboutMe = () => {
 
       <div>
         <h1 className="title">Projetos</h1>
+
         <section id="projects" className="aboutMe__projects">
           <div className="image-project">
-            <ElectroluxIcon />
+            <a href="/project/electrolux">
+              <ElectroluxIcon />
+            </a>
           </div>
 
           <div className="image-project">
-            <SauerIcon />
+            <a href="/project/multilaser">
+              <MultilaserIcon />
+            </a>
           </div>
 
           <div className="image-project">
-            <ObramaxIcon />
+            <a href="/project/sauer">
+              <SauerIcon />
+            </a>
           </div>
 
           <div className="image-project">
-            <MultilaserIcon />
+            <a href="/project/obramax">
+              <ObramaxIcon />
+            </a>
           </div>
         </section>
       </div>

@@ -9,4 +9,5 @@
 
 .footer .social__media-links {
   margin-top: 0;
+  justify-content: space-between;
 }

@@ -2,7 +2,6 @@
   height: 70px;
   justify-content: space-between;
   display: flex;
-  padding: 0 16px;
 }
 
 .mobile__header-container .mobile__header-logo {
@@ -34,8 +33,8 @@
 .menu-item {
   padding: 8px;
   margin-top: 16px;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 700;
   color: #445964;
 }
 

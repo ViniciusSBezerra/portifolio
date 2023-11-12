@@ -3,10 +3,12 @@ import "./index.css";
 export const HeaderDesktop = () => {
   return (
     <div className="header__desktop-container">
-      <div className="mobile__header-logo">
-        <Logo />
-        <p className="mobile__header-logo-text">Vinicius Souza</p>
-      </div>
+      <a href="/">
+        <div className="mobile__header-logo">
+          <Logo />
+          <p className="mobile__header-logo-text">Vinicius Souza</p>
+        </div>
+      </a>
 
       <ul className="header__desktop-options">
         <li className="menu-item">

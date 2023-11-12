@@ -3,6 +3,12 @@
   --secondary-color: #263138;
 }
 
+#root {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 body {
   padding: 0;
   display: flex;
