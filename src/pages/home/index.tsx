@@ -8,6 +8,7 @@ import { Technologies } from "../components/technologies";
 
 import "../home/index.css";
 import { AboutMe } from "../components/about-me";
+import { Projects } from "../components/projects/projects";
 
 export const Homepage = () => {
   return (
@@ -55,6 +56,8 @@ export const Homepage = () => {
         <AboutMe />
 
         <Technologies />
+
+        <Projects />
       </div>
     </>
   );

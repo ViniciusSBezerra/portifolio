@@ -9,10 +9,10 @@ import "./index.css";
 
 export const Technologies = () => {
   return (
-    <>
+    <section id="tecnologias" className="technologies">
       <h1 className="title">Minhas tecnologias</h1>
 
-      <div id="tecnologias" className="container__tecnologies">
+      <div className="container__tecnologies">
         <div className="image-tecnologie">
           <JavaScriptIcon />
         </div>
@@ -35,6 +35,6 @@ export const Technologies = () => {
           <VtexIcon />
         </div>
       </div>
-    </>
+    </section>
   );
 };

@@ -1,3 +1,9 @@
+.aboutMe {
+  font-size: 18px;
+  color: #445964;
+  text-align: center;
+}
+
 .container__aboutMe {
   max-width: 1366px;
   width: 100%;
