@@ -9,13 +9,18 @@ export const OpenMenu = () => {
       <ul>
         <li className="menu-item">
           {" "}
-          <a className="menu-item" href="#projects">
+          <a onClick={() => {
+            setIsOpen(false);
+          }} className="menu-item" href="#projects">
             Projetos
           </a>
         </li>
         <li className="menu-item">
-          <a className="menu-item" href="#tecnologias">
+          <a onClick={() => {
+            setIsOpen(false);
+          }} className="menu-item" href="#tecnologias">
             Tecnologias
+
           </a>
         </li>
       </ul>
