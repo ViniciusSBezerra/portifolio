@@ -17,6 +17,7 @@ export const MobileHeader = () => {
         </div>
       </a>
       <button
+        aria-label="menu hamburguer"
         onClick={() => {
           setIsOpen(true);
         }}

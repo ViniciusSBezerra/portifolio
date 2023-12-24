@@ -6,13 +6,13 @@ export const Footer = () => {
   return (
     <div className="footer">
       <div className="social__media-links">
-        <a target="_blank" href="https://github.com/ViniciusSBezerra">
+        <a target="_blank" aria-label="icone github" href="https://github.com/ViniciusSBezerra">
           <GitHubIcon />
         </a>
-        <a target="_blank" href="https://www.linkedin.com/in/viniciussbezerra/">
+        <a target="_blank" aria-label="icone linkedin" href="https://www.linkedin.com/in/viniciussbezerra/">
           <LikedinIcon />
         </a>
-        <a target="_blank" href="https://www.instagram.com/vinicius_s25/">
+        <a target="_blank" aria-label="icone instagram" href="https://www.instagram.com/vinicius_s25/">
           <InstagramIcon />
         </a>
       </div>
