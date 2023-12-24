@@ -1,0 +1,16 @@
+.footer {
+  bottom: 0;
+  position: relative;
+  width: 100%;
+  max-width: 1366px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .social__media-links {
+  max-width: 375px;
+  margin-top: 0;
+  justify-content: space-evenly;
+}
