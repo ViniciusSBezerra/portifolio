@@ -17,8 +17,6 @@
   display: flex;
   align-items: center;
   gap: 10px;
+
 }
 
-.menu_item:hover {
-  background-color: #f71963;
-}
