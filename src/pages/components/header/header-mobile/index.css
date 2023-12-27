@@ -2,6 +2,7 @@
   height: 70px;
   justify-content: space-between;
   display: flex;
+  align-items: center;
 }
 
 .mobile__header-container .mobile__header-logo {
