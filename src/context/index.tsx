@@ -14,7 +14,7 @@ export interface Context {
 // Crie um contexto
 const GlobalContext: any = createContext<Context>({
   isOpen: false,
-  setIsOpen: () => {},
+  setIsOpen: () => { },
 });
 
 export const useGlobalContext = () => {

@@ -20,7 +20,7 @@ export const Projects = () => {
         />
         <CardProjects
           name="Obramax"
-          technologies={["Javascript", "Reactjs", "Vtexio"]}
+          technologies={["Javascript", "Reactjs", "Vtexio", "graphql"]}
           description="
       A Obramax é uma loja de construção e materiais para casa, fornecendo uma extensa variedade de produtos para projetos residenciais e comerciais, desde materiais de construção até ferramentas e decoração, tornando-se um destino completo para as necessidades de quem busca soluções para reformas e construções."
         />
