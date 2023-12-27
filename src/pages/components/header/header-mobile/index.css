@@ -35,7 +35,7 @@
   margin-top: 16px;
   font-size: 14px;
   font-weight: 700;
-  color: #445964;
+  color: var(--primary-color);
 }
 
 @media (min-width: 768px) {
