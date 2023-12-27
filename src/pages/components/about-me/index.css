@@ -1,6 +1,6 @@
 .aboutMe {
   font-size: 18px;
-  color: #445964;
+  color: var(--primary-color);
   text-align: center;
 }
 
@@ -18,7 +18,7 @@
 
 .aboutMe__text {
   max-width: 545px;
-  color: #445964;
+  color: var(--primary-color);
   text-align: center;
   font-family: sans-serif;
   font-size: 16px;
