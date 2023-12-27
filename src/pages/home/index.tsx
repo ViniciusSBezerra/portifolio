@@ -25,9 +25,9 @@ export const Homepage = () => {
             </div>
 
             <div className="container__button">
-              <a className="content__homepage-ancor" href="#about-me">
+              <p className="content__homepage-ancor" >
                 Um pouco mais sobre mim
-              </a>
+              </p>
             </div>
 
             <SocialMedia />
