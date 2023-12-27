@@ -1,14 +1,12 @@
-import { GitHubIcon } from "../../assets/GitHubIcon";
+
 import { HomeIcon } from "../../assets/HomeIcon";
 
-import { InstagramIcon } from "../../assets/InstagramIcon";
-
-import { LikedinIcon } from "../../assets/LinkedinIcon";
 import { Technologies } from "../components/technologies";
 
 import "../home/index.css";
 import { AboutMe } from "../components/about-me";
 import { Projects } from "../components/projects/projects";
+import { SocialMedia } from "../components/social-media";
 
 export const Homepage = () => {
   return (
@@ -17,7 +15,7 @@ export const Homepage = () => {
         <div className="content__homepage">
           <section className="text">
             <div className="content__homepage-text-section">
-              <p className="content__homepage-text">Ola pessoal,</p>
+              <p className="content__homepage-text">Ola pessoal</p>
               <h1 className="content__homepage-text-title">
                 Sou Desenvolvedor web
               </h1>
@@ -32,20 +30,7 @@ export const Homepage = () => {
               </a>
             </div>
 
-            <div className="social__media-links">
-              <a target="_blank" href="https://github.com/ViniciusSBezerra">
-                <GitHubIcon />
-              </a>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/viniciussbezerra/"
-              >
-                <LikedinIcon />
-              </a>
-              <a target="_blank" href="https://www.instagram.com/vinicius_s25/">
-                <InstagramIcon />
-              </a>
-            </div>
+            <SocialMedia />
           </section>
 
           <section className="homeicon">
