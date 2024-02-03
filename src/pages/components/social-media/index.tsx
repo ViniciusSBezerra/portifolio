@@ -15,7 +15,7 @@ export const SocialMedia = () => {
             >
                 <LikedinIcon />
             </a>
-            <a target="_blank" href="https://www.instagram.com/vinicius_s25/">
+            <a target="_blank" href="https://www.instagram.com/viniciussbtech/">
                 <InstagramIcon />
             </a>
         </div>
