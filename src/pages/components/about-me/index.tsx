@@ -1,10 +1,14 @@
+
+import { useGlobalContext, Context } from "../../../context";
 import "./index.css";
 
 export const AboutMe = () => {
+
+  const { theme } = useGlobalContext() as Context
   return (
     <div className="container__aboutMe">
-      <h1 className="title">Sobre mim</h1>
-      <p className="aboutMe">
+      <h1 className={!theme ? "title" : "title dark-theme"}>Sobre mim</h1>
+      <p className={!theme ? "aboutMe" : "aboutMe dark-theme"}>
         Olá, sou Vinicius Souza, um desenvolvedor web de 23 anos, atualmente
         empregado na QualityDigital, onde tenho a emocionante oportunidade de
         contribuir para projetos de destaque, incluindo Electrolux, Multilaser,
