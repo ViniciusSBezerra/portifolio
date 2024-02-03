@@ -1,8 +1,12 @@
+
 import { Logo } from "../../../../assets/Logo";
+import { useGlobalContext, Context } from "../../../../context";
 import { MaterialUISwitch } from "../../switch/Switch";
 import "./index.css";
 
 export const HeaderDesktop = () => {
+
+  const { handleTheme } = useGlobalContext() as Context
   return (
     <div className="header__desktop-container">
       <a href="/">
@@ -14,7 +18,7 @@ export const HeaderDesktop = () => {
 
       <ul className="header__desktop-options">
 
-        <MaterialUISwitch />
+        <MaterialUISwitch onClick={() => handleTheme()} />
 
         <li className="menu-item">
           {" "}

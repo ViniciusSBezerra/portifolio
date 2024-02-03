@@ -7,7 +7,7 @@ import { Context, useGlobalContext } from "../../../../context";
 import { MaterialUISwitch } from "../../switch/Switch";
 
 export const MobileHeader = () => {
-  const { isOpen, setIsOpen } = useGlobalContext() as Context;
+  const { isOpen, setIsOpen, handleTheme } = useGlobalContext() as Context;
 
   return (
     <div className="mobile__header-container">
@@ -20,7 +20,7 @@ export const MobileHeader = () => {
 
       <div className="section-button">
 
-        <MaterialUISwitch />
+        <MaterialUISwitch onClick={() => handleTheme()} />
         <button
           aria-label="menu hamburguer"
           onClick={() => {
