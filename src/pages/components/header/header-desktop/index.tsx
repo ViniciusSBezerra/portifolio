@@ -1,4 +1,5 @@
 import { Logo } from "../../../../assets/Logo";
+import { MaterialUISwitch } from "../../switch/Switch";
 import "./index.css";
 
 export const HeaderDesktop = () => {
@@ -12,6 +13,9 @@ export const HeaderDesktop = () => {
       </a>
 
       <ul className="header__desktop-options">
+
+        <MaterialUISwitch />
+
         <li className="menu-item">
           {" "}
           <a className="menu-item" href="#tecnologias">

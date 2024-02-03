@@ -4,6 +4,7 @@ import { Logo } from "../../../../assets/Logo";
 import "./index.css";
 import { MenuHamburguerIcon } from "../../../../assets/MenuHamburguerIcon";
 import { Context, useGlobalContext } from "../../../../context";
+import { MaterialUISwitch } from "../../switch/Switch";
 
 export const MobileHeader = () => {
   const { isOpen, setIsOpen } = useGlobalContext() as Context;
@@ -16,14 +17,21 @@ export const MobileHeader = () => {
           <p className="mobile__header-logo-text">Vinicius Souza</p>
         </div>
       </a>
-      <button
-        aria-label="menu hamburguer"
-        onClick={() => {
-          setIsOpen(true);
-        }}
-      >
-        <MenuHamburguerIcon />
-      </button>
+
+      <div className="section-button">
+
+        <MaterialUISwitch />
+        <button
+          aria-label="menu hamburguer"
+          onClick={() => {
+            setIsOpen(true);
+          }}
+        >
+          <MenuHamburguerIcon />
+        </button>
+
+
+      </div>
       {isOpen ? <OpenMenu /> : ""}
     </div>
   );

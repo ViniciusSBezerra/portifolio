@@ -39,6 +39,11 @@
   color: var(--primary-color);
 }
 
+.section-button{
+  display: flex;
+  align-items: center;
+}
+
 @media (min-width: 768px) {
   .menu-item {
     margin: 0;
