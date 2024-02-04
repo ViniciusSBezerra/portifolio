@@ -18,7 +18,7 @@ export const HeaderDesktop = () => {
 
       <ul className="header__desktop-options">
 
-        <MaterialUISwitch onClick={() => handleTheme()} />
+        <MaterialUISwitch onClick={() => handleTheme && handleTheme()} />
 
         <li className="menu-item">
           {" "}
