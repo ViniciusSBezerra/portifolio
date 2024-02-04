@@ -3,22 +3,22 @@ import { Context, useGlobalContext } from "../../../../context";
 import "../index.css";
 
 export const OpenMenu = () => {
-  const { setIsOpen } = useGlobalContext() as Context;
+  const { setIsOpen, theme } = useGlobalContext() as Context;
   return (
-    <div className="menu-open">
+    <div className={!theme ? "menu-open" : "menu-open bg-dark"}>
       <ul>
         <li className="menu-item">
           {" "}
           <a onClick={() => {
             setIsOpen(false);
-          }} className="menu-item" href="#projects">
+          }} className={!theme ? "menu-item" : "menu-item dark-theme"} href="#projects">
             Projetos
           </a>
         </li>
         <li className="menu-item">
           <a onClick={() => {
             setIsOpen(false);
-          }} className="menu-item" href="#tecnologias">
+          }} className={!theme ? "menu-item" : "menu-item dark-theme"} href="#tecnologias">
             Tecnologias
 
           </a>

@@ -1,4 +1,9 @@
+import { Context, useGlobalContext } from "../context";
+
 export const CloseMenuIcon = () => {
+
+  const { theme } = useGlobalContext() as Context
+
   return (
     <svg
       width="40"
@@ -9,13 +14,13 @@ export const CloseMenuIcon = () => {
     >
       <path
         d="M33.4731 33.4731L66 66"
-        stroke="black"
+        stroke={!theme ? "black" : "#17add4"}
         stroke-width="5"
         stroke-linecap="round"
       />
       <path
         d="M66 33.4731L33.4731 66"
-        stroke="black"
+        stroke={!theme ? "black" : "#17add4"}
         stroke-width="5"
         stroke-linecap="round"
       />

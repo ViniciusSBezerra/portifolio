@@ -1,10 +1,12 @@
 import { CardProjects } from "./CardProjects";
 import "./styles.css";
-
+import { Context, useGlobalContext } from "../../../context";
 export const Projects = () => {
+  const { theme } = useGlobalContext() as Context;
+
   return (
     <div id="projects">
-      <h1 className="title">Projetos que participei</h1>
+      <h1 className={!theme ? "title" : "title dark-theme"}>Projetos que participei</h1>
 
       <div className="projects">
         <CardProjects
