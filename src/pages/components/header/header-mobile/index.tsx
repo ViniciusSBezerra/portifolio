@@ -14,13 +14,14 @@ export const MobileHeader = () => {
       <a href="/">
         <div className="mobile__header-logo">
           <Logo />
-          <p className={!theme ? "mobile__header-logo-text" : "mobile__header-logo-text dark-theme"}>Vinicius Souza</p>
+          <p className={!theme ? "mobile__header-logo-text" : "mobile__header-logo-text dark-theme"}>Vinicius Tech</p>
         </div>
       </a>
 
       <div className="section-button">
 
         <MaterialUISwitch onClick={() => handleTheme && handleTheme()} />
+
         <button
           aria-label="menu hamburguer"
           onClick={() => {

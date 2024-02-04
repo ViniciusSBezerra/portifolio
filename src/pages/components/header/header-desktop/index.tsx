@@ -12,13 +12,15 @@ export const HeaderDesktop = () => {
       <a href="/">
         <div className="mobile__header-logo">
           <Logo />
-          <p className={!theme ? "mobile__header-logo-text" : "mobile__header-logo-text dark-theme"}>Vinicius Souza</p>
+          <p className={!theme ? "mobile__header-logo-text" : "mobile__header-logo-text dark-theme"}>Vinicius Tech</p>
         </div>
       </a>
 
       <ul className="header__desktop-options">
 
-        <MaterialUISwitch onClick={() => handleTheme && handleTheme()} />
+        <li className="menu-item">
+          <MaterialUISwitch onClick={() => handleTheme && handleTheme()} />
+        </li>
 
         <li className="menu-item">
           {" "}
