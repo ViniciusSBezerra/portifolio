@@ -12,6 +12,7 @@ export interface Context {
   setIsOpen: Dispatch<SetStateAction<boolean>>;
   setTheme: Dispatch<SetStateAction<boolean>>;
   toogleMenu?: () => void;
+  handleTheme?: () => void;
 }
 // Crie um contexto
 const GlobalContext: any = createContext<Context>({
