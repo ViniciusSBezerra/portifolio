@@ -1,4 +1,5 @@
 import "./styles.css";
+import { Context, useGlobalContext } from "../../../context";
 
 interface CardProjectsProps {
   name: string;
@@ -11,15 +12,17 @@ export const CardProjects = ({
   description,
   technologies,
 }: CardProjectsProps) => {
+
+  const { theme } = useGlobalContext() as Context;
   return (
-    <div className="project__card">
-      <p className="project__name">{name}</p>
+    <div className={!theme ? "project__card" : "project__card card-dark-theme"}>
+      <p className={!theme ? "project__name" : "project__name dark-theme"}>{name}</p>
       <p className="project__technologies">
         {technologies?.map((technologie) => (
           <span className="project__technologies__item">{technologie}</span>
         ))}
       </p>
-      <p className="project__description">{description}</p>
+      <p className={!theme ? "project__description" : "project__description dark-theme"}>{description}</p>
     </div>
   );
 };

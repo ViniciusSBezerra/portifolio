@@ -2,16 +2,23 @@
   --primary-color: #445964;
   --secondary-color: #263138;
   --secondary-color-dt: #1b1d1f;
-
   --primary-color-dt: #17add4;
- 
+  --bg-card-dt: #222425;
+
 }
 
 .dark-theme {
-  background-color: var(--secondary-color-dt) ;
+  /* background-color: var(--secondary-color-dt) ; */
   color: var(--primary-color-dt);
 }
 
+.bg-dark {
+  background-color: var(--secondary-color-dt);
+}
+
+.card-dark-theme{
+  background-color:var(--bg-card-dt)
+}
 body {
   font-family: sans-serif;
   margin: 0;

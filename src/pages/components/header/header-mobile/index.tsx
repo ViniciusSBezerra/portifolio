@@ -7,14 +7,14 @@ import { Context, useGlobalContext } from "../../../../context";
 import { MaterialUISwitch } from "../../switch/Switch";
 
 export const MobileHeader = () => {
-  const { isOpen, setIsOpen, handleTheme } = useGlobalContext() as Context;
+  const { isOpen, setIsOpen, handleTheme, theme } = useGlobalContext() as Context;
 
   return (
     <div className="mobile__header-container">
       <a href="/">
         <div className="mobile__header-logo">
           <Logo />
-          <p className="mobile__header-logo-text">Vinicius Souza</p>
+          <p className={!theme ? "mobile__header-logo-text" : "mobile__header-logo-text dark-theme"}>Vinicius Souza</p>
         </div>
       </a>
 

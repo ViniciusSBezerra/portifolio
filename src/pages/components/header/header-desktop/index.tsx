@@ -6,13 +6,13 @@ import "./index.css";
 
 export const HeaderDesktop = () => {
 
-  const { handleTheme } = useGlobalContext() as Context
+  const { handleTheme, theme } = useGlobalContext() as Context
   return (
     <div className="header__desktop-container">
       <a href="/">
         <div className="mobile__header-logo">
           <Logo />
-          <p className="mobile__header-logo-text">Vinicius Souza</p>
+          <p className={!theme ? "mobile__header-logo-text" : "mobile__header-logo-text dark-theme"}>Vinicius Souza</p>
         </div>
       </a>
 
@@ -22,14 +22,14 @@ export const HeaderDesktop = () => {
 
         <li className="menu-item">
           {" "}
-          <a className="menu-item" href="#tecnologias">
+          <a className={!theme ? "menu-item" : "menu-item dark-theme"} href="#tecnologias">
             Tecnologias
           </a>{" "}
         </li>
 
         <li className="menu-item">
           {" "}
-          <a className="menu-item" href="#projects">
+          <a className={!theme ? "menu-item" : "menu-item dark-theme"} href="#projects">
             Projetos
           </a>{" "}
         </li>
