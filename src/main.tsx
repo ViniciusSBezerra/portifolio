@@ -1,29 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
-import { Homepage } from "./pages/home/index.tsx";
 import { GlobalProvider } from "./context/index.tsx";
-import { Footer } from "./pages/components/footer/index.tsx";
 
-import { Header } from "./pages/components/header/index.tsx";
+import { App } from "./App.tsx";
 
-import "./reset.css";
-
-const routes = createBrowserRouter([
-  {
-    path: "/",
-    element: <Homepage />,
-  },
-]);
+import "./app.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <GlobalProvider>
     <React.StrictMode>
-      <Header />
-      <RouterProvider router={routes} />
-      <Footer />
+      <App />
     </React.StrictMode>
   </GlobalProvider>
 );

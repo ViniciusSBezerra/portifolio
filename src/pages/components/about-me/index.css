@@ -10,6 +10,10 @@
   margin: 0 auto;
 }
 
+.title.dark-theme{
+  color: var(--primary-color-dt);
+}
+
 .container__aboutMe .aboutMe {
   width: 100%;
   display: flex;
