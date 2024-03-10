@@ -4,5 +4,5 @@ import { useMediaQuery } from "react-responsive";
 
 export const Header = () => {
   const HeaderController = useMediaQuery({ query: "(min-width: 768px)" });
-  return <>{HeaderController ? <HeaderDesktop /> : <MobileHeader />}</>;
+  return <header>{HeaderController ? <HeaderDesktop /> : <MobileHeader />}</header>;
 };
