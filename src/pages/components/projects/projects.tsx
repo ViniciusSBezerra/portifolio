@@ -6,7 +6,7 @@ export const Projects = () => {
 
   return (
     <div id="projects">
-      <h1 className={!theme ? "title" : "title dark-theme"}>Projetos que participei</h1>
+      <h4 className={!theme ? "title" : "title dark-theme"}>Projetos que participei</h4>
 
       <div className="projects">
         <CardProjects

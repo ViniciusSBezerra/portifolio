@@ -12,7 +12,7 @@ export const Technologies = () => {
   const { theme } = useGlobalContext() as Context;
   return (
     <section id="tecnologias" className="technologies">
-      <h1 className={!theme ? "title" : "title dark-theme"}>Minhas tecnologias</h1>
+      <h3 className={!theme ? "title" : "title dark-theme"}>Minhas tecnologias</h3>
 
       <div className="container__tecnologies">
         <div className="image-tecnologie">

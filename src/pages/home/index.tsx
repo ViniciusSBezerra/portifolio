@@ -13,8 +13,8 @@ export const Homepage = () => {
   const { theme } = useGlobalContext() as Context
   return (
     <div className="container__homepage">
-      <div className="content__homepage">
-        <section className={!theme ? "text" : "text dark-theme"}>
+      <main className="content__homepage">
+        <div className={!theme ? "text" : "text dark-theme"}>
           <div className="content__homepage-text-section">
             <p className={!theme ? "content__homepage-text" : "content__homepage-text dark-theme"}>Ola pessoal</p>
             <h1 className={!theme ? "content__homepage-text-title" : "content__homepage-text-title dark-theme"} >
@@ -32,12 +32,12 @@ export const Homepage = () => {
           </div>
 
           <SocialMedia />
-        </section>
+        </div>
 
         <section className="homeicon">
           <HomeIcon />
         </section>
-      </div>
+      </main>
 
       <AboutMe />
 

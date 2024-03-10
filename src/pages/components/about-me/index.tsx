@@ -7,7 +7,7 @@ export const AboutMe = () => {
   const { theme } = useGlobalContext() as Context
   return (
     <div className="container__aboutMe">
-      <h1 className={!theme ? "title" : "title dark-theme"}>Sobre mim</h1>
+      <h2 className={!theme ? "title" : "title dark-theme"}>Sobre mim</h2>
       <p className={!theme ? "aboutMe" : "aboutMe dark-theme"}>
         Olá, sou Vinicius Souza, um desenvolvedor web de 23 anos, atualmente
         empregado na QualityDigital, onde tenho a emocionante oportunidade de
