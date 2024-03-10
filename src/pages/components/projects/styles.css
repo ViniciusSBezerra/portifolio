@@ -9,8 +9,9 @@
 
 .project__card {
   max-width: 425px;
-  padding: 16px;
+  padding: 24px;
   background-color: #f0f0f0;
+  border-radius: 20px;
 }
 
 .project__name {
@@ -21,17 +22,17 @@
 }
 .project__technologies {
   display: flex;
-  justify-content: space-between;
+  gap: 16px;
   margin: 8px 0;
 }
 
 .project__technologies__item {
   justify-content: space-between;
-  font-size: 8px;
+  font-size: 10px;
   background-color: var(--secondary-color);
-  padding: 4px;
+  padding: 6px;
   color: #fff;
-  border-radius: 2px;
+  border-radius: 12px;
 }
 
 .project__description {
