@@ -19,7 +19,7 @@ export const HeaderDesktop = () => {
       <ul className="header__desktop-options">
 
         <li className="menu-item">
-          <MaterialUISwitch onClick={() => handleTheme && handleTheme()} />
+          <MaterialUISwitch aria-label="switch" onClick={() => handleTheme && handleTheme()} />
         </li>
 
         <li className="menu-item">

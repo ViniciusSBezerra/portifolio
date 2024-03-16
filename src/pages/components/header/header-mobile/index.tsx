@@ -20,7 +20,7 @@ export const MobileHeader = () => {
 
       <div className="section-button">
 
-        <MaterialUISwitch onClick={() => handleTheme && handleTheme()} />
+        <MaterialUISwitch aria-label="switch" onClick={() => handleTheme && handleTheme()} />
 
         <button
           aria-label="menu hamburguer"
