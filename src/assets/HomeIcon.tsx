@@ -7,6 +7,7 @@ export const HomeIcon = () => {
       viewBox="0 0 705 697"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+
     >
       <path
         d="M273.265 271.659H79.6752V142.145H273.265V271.659Z"

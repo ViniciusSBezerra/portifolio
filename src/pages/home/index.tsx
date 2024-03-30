@@ -13,7 +13,7 @@ export const Homepage = () => {
   const { theme } = useGlobalContext() as Context
   return (
     <div className="container__homepage">
-      <main className="content__homepage">
+      <section className="content__homepage">
         <div className={!theme ? "text" : "text dark-theme"}>
           <div className="content__homepage-text-section">
             <p className={!theme ? "content__homepage-text" : "content__homepage-text dark-theme"}>Ola pessoal</p>
@@ -37,7 +37,7 @@ export const Homepage = () => {
         <section className="homeicon">
           <HomeIcon />
         </section>
-      </main>
+      </section>
 
       <AboutMe />
 

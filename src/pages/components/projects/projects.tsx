@@ -1,11 +1,13 @@
 import { CardProjects } from "./CardProjects";
 import "./styles.css";
 import { Context, useGlobalContext } from "../../../context";
+
+
 export const Projects = () => {
   const { theme } = useGlobalContext() as Context;
 
   return (
-    <div id="projects">
+    <section id="projects">
       <h4 className={!theme ? "title" : "title dark-theme"}>Projetos que participei</h4>
 
       <div className="projects">
@@ -44,6 +46,6 @@ export const Projects = () => {
           description="A Osklen é uma renomada marca brasileira de moda, fundada em 1986 por Oskar Metsavaht. Reconhecida por sua abordagem sustentável e inspiração na natureza e na vida urbana do Rio de Janeiro, a marca oferece uma ampla gama de roupas, calçados e acessórios para homens e mulheres. Com presença internacional, a Osklen conquistou destaque pela sua combinação única de estilo contemporâneo e compromisso com a responsabilidade ambiental."
         />
       </div>
-    </div>
+    </section>
   );
 };

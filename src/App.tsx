@@ -9,14 +9,16 @@ export const App = () => {
 
     const { theme } = useGlobalContext() as Context;
 
-    console.log(theme)
     return (
         <div className={!theme ? "app" : "app dark-theme"}>
-            <div className="content">
-                <Header />
+            <Header />
+            <main className="content">
+
                 <Homepage />
-                <Footer />
-            </div>
+
+            </main>
+
+            <Footer />
         </div>
     )
 }
