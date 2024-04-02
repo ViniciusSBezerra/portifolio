@@ -1,14 +1,15 @@
 import { CardProjects } from "./CardProjects";
 import "./styles.css";
-import { Context, useGlobalContext } from "../../../context";
+
+import { Title } from "../generic/title";
 
 
 export const Projects = () => {
-  const { theme } = useGlobalContext() as Context;
+
 
   return (
     <section id="projects">
-      <h4 className={!theme ? "title" : "title dark-theme"}>Projetos que participei</h4>
+      <Title title="Projetos que participei" />
 
       <div className="projects">
         <CardProjects

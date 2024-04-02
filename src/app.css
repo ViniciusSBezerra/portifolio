@@ -1,18 +1,24 @@
-:root {
-  --primary-color: #445964;
-  --secondary-color: #263138;
-  --secondary-color-dt: #1b1d1f;
-  --primary-color-dt: #17add4;
-  --bg-card-dt: #222425;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+
+@layer base{
+  :root{
+    --primary-color: #445964;
+    --secondary-color: #263138;
+    --secondary-color-dt: #1b1d1f;
+    --primary-color-dt: #17add4;
+    --bg-card-dt: #222425;
+  }
 }
+
 
 header{
   padding: 0 16px;
 }
 
 .dark-theme {
-
   color: var(--primary-color-dt);
 }
 

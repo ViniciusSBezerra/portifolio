@@ -4,15 +4,16 @@ import { JavaScriptIcon } from "../../../assets/JavaScriptIcon";
 import { ReactIcon } from "../../../assets/ReactIcon";
 import { TypeScriptIcon } from "../../../assets/TypeScriptIcon";
 import { VtexIcon } from "../../../assets/VtexIo";
-import { Context, useGlobalContext } from "../../../context";
+
+import { Title } from "../generic/title";
 
 import "./index.css";
 
 export const Technologies = () => {
-  const { theme } = useGlobalContext() as Context;
+
   return (
     <section id="tecnologias" className="technologies">
-      <h3 className={!theme ? "title" : "title dark-theme"}>Minhas tecnologias</h3>
+      <Title title="Minhas tecnologias" />
 
       <div className="container__tecnologies">
         <div className="image-tecnologie">
