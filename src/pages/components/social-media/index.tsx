@@ -5,7 +5,7 @@ import { LikedinIcon } from "../../../assets/LinkedinIcon";
 
 export const SocialMedia = () => {
     return (
-        <div className="social__media-links">
+        <div className="flex gap-6 justify-between mt-6">
             <a target="_blank" aria-label="link github" rel="noopener" href="https://github.com/ViniciusSBezerra">
                 <GitHubIcon />
             </a>

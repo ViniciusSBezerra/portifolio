@@ -2,40 +2,33 @@
 import { Logo } from "../../../../assets/Logo";
 import { useGlobalContext, Context } from "../../../../context";
 import { MaterialUISwitch } from "../../switch/Switch";
-import "./index.css";
+import { OptionMenu } from "../OptionMenu";
+
 
 export const HeaderDesktop = () => {
 
   const { handleTheme, theme } = useGlobalContext() as Context
   return (
-    <div className="header__desktop-container">
-      <a href="/">
-        <div className="mobile__header-logo">
-          <Logo />
-          <p className={!theme ? "mobile__header-logo-text" : "mobile__header-logo-text dark-theme"}>Vinicius Tech</p>
-        </div>
-      </a>
+    <div className="w-full h-24 flex items-center shadow-lg">
+      <div className="w-full max-w-[1440px] mx-auto flex items-center justify-between px-4">
+        <a href="/">
+          <div className="flex items-center gap-3">
+            <Logo />
+            <p className={!theme ? "text-2xl text-[--primary-color] font-bold" : "text-2xl text-[--primary-color] font-bold dark-theme"}>Vinicius Tech</p>
+          </div>
+        </a>
 
-      <ul className="header__desktop-options">
+        <ul className="flex items-center gap-5">
+          <OptionMenu >
+            <MaterialUISwitch aria-label="switch" onClick={() => handleTheme && handleTheme()} />
+          </OptionMenu>
+          <OptionMenu name="Tecnologias" href="#tecnologias"></OptionMenu>
+          <OptionMenu name="Projetos" href="#projects"></OptionMenu>
 
-        <li className="menu-item">
-          <MaterialUISwitch aria-label="switch" onClick={() => handleTheme && handleTheme()} />
-        </li>
 
-        <li className="menu-item">
-          {" "}
-          <a className={!theme ? "menu-item" : "menu-item dark-theme"} href="#tecnologias">
-            Tecnologias
-          </a>{" "}
-        </li>
 
-        <li className="menu-item">
-          {" "}
-          <a className={!theme ? "menu-item" : "menu-item dark-theme"} href="#projects">
-            Projetos
-          </a>{" "}
-        </li>
-      </ul>
+        </ul>
+      </div>
     </div>
   );
 };

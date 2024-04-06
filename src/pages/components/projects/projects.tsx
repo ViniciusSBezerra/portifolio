@@ -1,16 +1,17 @@
 import { CardProjects } from "./CardProjects";
-import "./styles.css";
-import { Context, useGlobalContext } from "../../../context";
+
+
+import { Title } from "../generic/title";
 
 
 export const Projects = () => {
-  const { theme } = useGlobalContext() as Context;
+
 
   return (
-    <section id="projects">
-      <h4 className={!theme ? "title" : "title dark-theme"}>Projetos que participei</h4>
+    <section id="projects" className=" max-w-[1440px] text-center mt-6  md:mt-12">
+      <Title title="Projetos que participei" />
 
-      <div className="projects">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-5 mt-6 text-left">
         <CardProjects
           name="Electrolux"
           technologies={["Javascript", "Reactjs", "Vtex IO", "graphql"]}

@@ -12,7 +12,7 @@ export const App = () => {
     return (
         <div className={!theme ? "app" : "app dark-theme"}>
             <Header />
-            <main className="content">
+            <main className="m-w-[1440px] px-4 mx-auto">
 
                 <Homepage />
 

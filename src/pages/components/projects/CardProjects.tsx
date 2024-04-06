@@ -1,4 +1,4 @@
-import "./styles.css";
+
 import { Context, useGlobalContext } from "../../../context";
 
 interface CardProjectsProps {
@@ -15,14 +15,14 @@ export const CardProjects = ({
 
   const { theme } = useGlobalContext() as Context;
   return (
-    <div className={!theme ? "project__card" : "project__card card-dark-theme"}>
-      <p className={!theme ? "project__name" : "project__name dark-theme"}>{name}</p>
-      <p className="project__technologies">
+    <div className={`w-full  p-6 rounded-3xl ${!theme ? " bg-[#f0f0f0] " : "card-dark-theme"}`}>
+      <p className={`text-base font-bold rounded ${!theme ? "text-[--primary-color]" : "dark-theme"}`}>{name}</p>
+      <p className="flex gap-4 my-2 flex-wrap">
         {technologies?.map((technologie) => (
-          <span className="project__technologies__item">{technologie}</span>
+          <span className="w-max text-xs bg-[--secondary-color] p-2 text-white rounded-xl ">{technologie}</span>
         ))}
       </p>
-      <p className={!theme ? "project__description" : "project__description dark-theme"}>{description}</p>
+      <p className={` text-xs ${!theme ? "text-[--primary-color]" : "dark-theme"}`}>{description}</p>
     </div>
   );
 };
