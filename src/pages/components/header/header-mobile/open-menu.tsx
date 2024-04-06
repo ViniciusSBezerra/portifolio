@@ -1,32 +1,23 @@
 import { CloseMenuIcon } from "../../../../assets/CloseMenuIcon";
 import { Context, useGlobalContext } from "../../../../context";
-import "../index.css";
+import { OptionMenu } from "../OptionMenu";
+
 
 export const OpenMenu = () => {
   const { setIsOpen, theme } = useGlobalContext() as Context;
   return (
-    <div className={!theme ? "menu-open" : "menu-open bg-dark"}>
+    <div className={`${!theme ? "w-full h-full z-50 fixed right-0 top-0 bg-white" : "w-full h-full z-50 fixed right-0 top-0 bg-dark"}`}>
       <ul>
-        <li className="menu-item">
-          {" "}
-          <a onClick={() => {
-            setIsOpen(false);
-          }} className={!theme ? "menu-item" : "menu-item dark-theme"} href="#projects">
-            Projetos
-          </a>
-        </li>
-        <li className="menu-item">
-          <a onClick={() => {
-            setIsOpen(false);
-          }} className={!theme ? "menu-item" : "menu-item dark-theme"} href="#tecnologias">
-            Tecnologias
 
-          </a>
-        </li>
+        <OptionMenu closeMenu={false}
+          name="Projetos" href="#projects" />
+
+        <OptionMenu closeMenu={false} name="Tecnologias" href="#tecnologias"></OptionMenu>
+
       </ul>
 
       <button
-        className="container-icon"
+        className="w-[40px] h-[40px] absolute top-4 right-4 "
         onClick={() => {
           setIsOpen(false);
         }}

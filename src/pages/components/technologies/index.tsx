@@ -6,37 +6,38 @@ import { TypeScriptIcon } from "../../../assets/TypeScriptIcon";
 import { VtexIcon } from "../../../assets/VtexIo";
 
 import { Title } from "../generic/title";
+import { ContainerImage } from "./ContainerImage";
 
-import "./index.css";
+
 
 export const Technologies = () => {
 
   return (
-    <section id="tecnologias" className="technologies">
+    <section id="tecnologias" className="text-center mt-6 md:mt-12">
       <Title title="Minhas tecnologias" />
 
-      <div className="container__tecnologies">
-        <div className="image-tecnologie">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 justify-items-center mt-6">
+        <ContainerImage >
           <JavaScriptIcon />
-        </div>
+        </ContainerImage>
 
-        <div className="image-tecnologie">
+        <ContainerImage >
           <ReactIcon />
-        </div>
-        <div className="image-tecnologie">
+        </ContainerImage>
+        <ContainerImage >
           <HtmlIcon />
-        </div>
+        </ContainerImage>
 
-        <div className="image-tecnologie">
+        <ContainerImage >
           <CssIcon />
-        </div>
-        <div className="image-tecnologie">
+        </ContainerImage>
+        <ContainerImage >
           <TypeScriptIcon />
-        </div>
+        </ContainerImage>
 
-        <div className="image-tecnologie">
+        <ContainerImage >
           <VtexIcon />
-        </div>
+        </ContainerImage>
       </div>
     </section>
   );

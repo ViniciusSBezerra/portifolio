@@ -14,9 +14,6 @@
 }
 
 
-header{
-  padding: 0 16px;
-}
 
 .dark-theme {
   color: var(--primary-color-dt);
@@ -52,28 +49,16 @@ body {
   color: var(--primary-color-dt);
 }
 
-.content{
-  max-width: 1440px;
-  padding: 0 16px;
-  margin: 0 auto;
-}
+
 
 p,
 h1 {
   margin: 0;
 }
 
-button {
-  margin: 0;
-  padding: 0;
-  border: none;
-  background: none;
-  font: inherit;
-  color: inherit;
-  cursor: pointer;
-}
 
-ul {
+
+/* ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -87,4 +72,4 @@ li {
 
 a {
   text-decoration: none;
-}
+} */

@@ -1,7 +1,8 @@
 export const HomeIcon = () => {
   return (
     <svg
-      className="home-icon"
+
+      className="w-full h-auto max-w-[705px] mt-6 lg:mt-0"
       width="705"
       height="697"
       viewBox="0 0 705 697"
