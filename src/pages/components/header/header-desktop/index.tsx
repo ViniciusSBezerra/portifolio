@@ -1,13 +1,13 @@
 
 import { Logo } from "../../../../assets/Logo";
 import { useGlobalContext, Context } from "../../../../context";
-import { MaterialUISwitch } from "../../switch/Switch";
+import { Switch } from "../../switch/Switch";
 import { OptionMenu } from "../OptionMenu";
 
 
 export const HeaderDesktop = () => {
 
-  const { handleTheme, theme } = useGlobalContext() as Context
+  const { theme } = useGlobalContext() as Context
   return (
     <div className="w-full h-24 flex items-center shadow-lg">
       <div className="w-full max-w-[1440px] mx-auto flex items-center justify-between px-4">
@@ -20,7 +20,7 @@ export const HeaderDesktop = () => {
 
         <ul className="flex items-center gap-5">
           <OptionMenu >
-            <MaterialUISwitch aria-label="switch" onClick={() => handleTheme && handleTheme()} />
+            <Switch />
           </OptionMenu>
           <OptionMenu name="Tecnologias" href="#tecnologias"></OptionMenu>
           <OptionMenu name="Projetos" href="#projects"></OptionMenu>

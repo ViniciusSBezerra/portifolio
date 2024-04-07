@@ -35,10 +35,11 @@ export const GlobalProvider = ({ children }: any) => {
     return setIsOpen(!isOpen);
   };
 
+
   const handleTheme = () => {
+
     return setTheme(!theme);
   };
-
 
   return (
     <GlobalContext.Provider value={{ toogleMenu, isOpen, setIsOpen, theme, setTheme, handleTheme }}>
