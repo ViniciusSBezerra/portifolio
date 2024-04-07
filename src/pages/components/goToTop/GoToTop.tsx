@@ -21,6 +21,6 @@ export const GoToTop = () => {
 
     const { theme } = useGlobalContext() as Context
     return (
-        <a className={`w-10 absolute right-4 h-10 rounded-3xl  shadow-inner cursor-pointer flex justify-center items-center transition ${!theme ? "bg-[--primary-color]" : "bg-[--bg-card-dt]"}`} href="#header"><UpArrow /></a>
+        <a aria-label="go to top" className={`w-10 absolute right-4 h-10 rounded-3xl  shadow-inner cursor-pointer flex justify-center items-center transition ${!theme ? "bg-[--primary-color]" : "bg-[--bg-card-dt]"}`} href="#header"><UpArrow /></a>
     )
 }
