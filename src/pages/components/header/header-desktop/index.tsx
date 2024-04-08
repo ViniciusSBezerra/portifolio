@@ -19,13 +19,9 @@ export const HeaderDesktop = () => {
         </a>
 
         <ul className="flex items-center gap-5">
-          <OptionMenu name="tema">
-            <Switch />
-          </OptionMenu>
+          <Switch />
           <OptionMenu name="Tecnologias" href="#tecnologias"></OptionMenu>
           <OptionMenu name="Projetos" href="#projects"></OptionMenu>
-
-
 
         </ul>
       </div>
