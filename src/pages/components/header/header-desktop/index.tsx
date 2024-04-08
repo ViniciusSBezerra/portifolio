@@ -19,7 +19,10 @@ export const HeaderDesktop = () => {
         </a>
 
         <ul className="flex items-center gap-5">
-          <Switch />
+          <li className={`text-sm font-bold px-4 py-2 mt-4 md: md:-0 md:mt-0 md:font-bold md:text-base ${!theme ? "text-[--primary-color]" : "text-[--dark-theme]"}`}>
+            <Switch />
+          </li>
+
           <OptionMenu name="Tecnologias" href="#tecnologias"></OptionMenu>
           <OptionMenu name="Projetos" href="#projects"></OptionMenu>
 
