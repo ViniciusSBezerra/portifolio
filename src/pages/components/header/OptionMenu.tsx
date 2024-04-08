@@ -14,7 +14,7 @@ export const OptionMenu = ({ href, name, children, closeMenu = true }: OptionMen
     return (
         <li className={`text-sm font-bold px-4 py-2 mt-4 md: md:-0 md:mt-0 md:font-bold md:text-base ${!theme ? "text-[--primary-color]" : "text-[--dark-theme]"}`}>
             {children}
-            <a onClick={() => setIsOpen(closeMenu)} href={href}>{name}</a>
+            <a onClick={() => setIsOpen(closeMenu)} title={name} href={href}>{name}</a>
         </li>
     )
 }
