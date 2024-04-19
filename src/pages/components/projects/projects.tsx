@@ -46,6 +46,22 @@ export const Projects = () => {
           technologies={["Javascript", "Deno", "Preact", "Vtex IO", "Deco"]}
           description="A Osklen é uma renomada marca brasileira de moda, fundada em 1986 por Oskar Metsavaht. Reconhecida por sua abordagem sustentável e inspiração na natureza e na vida urbana do Rio de Janeiro, a marca oferece uma ampla gama de roupas, calçados e acessórios para homens e mulheres. Com presença internacional, a Osklen conquistou destaque pela sua combinação única de estilo contemporâneo e compromisso com a responsabilidade ambiental."
         />
+
+        <CardProjects name="ArcelorMittal"
+          description="A ArcelorMittal é uma líder global em siderurgia e mineração, com operações em mais de 60 países. Oferece produtos como chapas, bobinas e barras de aço, focando em tecnologia e práticas sustentáveis. Seus produtos são vendidos principalmente através de canais corporativos e industriais."
+          technologies={["Javascript", "Reactjs", "Vtex IO"]} />
+        <CardProjects
+          name="Manole"
+          description="A Manole é uma conhecida livraria e editora especializada no segmento da saúde no Brasil. A empresa é destaque no mercado por fornecer materiais didáticos, livros especializados, e-books, e outros recursos educativos focados em diversas áreas da saúde, como medicina, enfermagem, odontologia, farmácia, e saúde pública, entre outras."
+          technologies={["Javascript", "Reactjs", "Vtex IO"]} />
+
+        <CardProjects
+          name="Iguatemi365"
+          description="
+          A Iguatemi365 é uma plataforma de e-commerce desenvolvida pela empresa Iguatemi, conhecida por sua forte presença no setor de shoppings de luxo no Brasil. O lançamento do Iguatemi365, em outubro de 2019, marcou a entrada da empresa no mercado de varejo online, expandindo a experiência de luxo que já era oferecida fisicamente nos shoppings para o ambiente digital."
+          technologies={["Javascript", "Reactjs", "Faststore"]}
+        />
+
       </div>
     </section>
   );
