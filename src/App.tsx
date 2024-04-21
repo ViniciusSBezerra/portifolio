@@ -3,8 +3,6 @@ import { Homepage } from "./pages/home"
 import { Header } from "./pages/components/header"
 import { Context, useGlobalContext } from "./context";
 
-
-
 export const App = () => {
 
     const { theme } = useGlobalContext() as Context;

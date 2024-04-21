@@ -3,6 +3,7 @@ import {
   SetStateAction,
   createContext,
   useContext,
+  useEffect,
   useState,
 } from "react";
 
@@ -35,10 +36,17 @@ export const GlobalProvider = ({ children }: any) => {
     return setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    const localstoragetheme = localStorage.getItem('theme');
+    if (localstoragetheme) {
+      setTheme(localstoragetheme === "dark-theme");
+    }
+  }, []);
 
   const handleTheme = () => {
-
-    return setTheme(!theme);
+    const newTheme = !theme;
+    localStorage.setItem('theme', newTheme ? "dark-theme" : "light-theme");
+    setTheme(newTheme);
   };
 
   return (

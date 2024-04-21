@@ -1,16 +1,15 @@
-import React from "react";
+import { Suspense } from "react";
 import ReactDOM from "react-dom/client";
-
 import { GlobalProvider } from "./context/index.tsx";
-
+import "./app.css";
+import Loading from "./pages/components/Loading/Loading.tsx";
 import { App } from "./App.tsx";
 
-import "./app.css";
-
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <GlobalProvider>
-    <React.StrictMode>
+  <Suspense fallback={<Loading />}>
+    <GlobalProvider>
       <App />
-    </React.StrictMode>
-  </GlobalProvider>
+    </GlobalProvider>
+  </Suspense>
+
 );
