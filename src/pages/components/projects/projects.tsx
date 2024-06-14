@@ -56,10 +56,10 @@ export const Projects = () => {
           technologies={["Javascript", "Reactjs", "Vtex IO"]} />
 
         <CardProjects
-          name="Iguatemi365"
+          name="bbbaterias"
           description="
-          A Iguatemi365 é uma plataforma de e-commerce desenvolvida pela empresa Iguatemi, conhecida por sua forte presença no setor de shoppings de luxo no Brasil. O lançamento do Iguatemi365, em outubro de 2019, marcou a entrada da empresa no mercado de varejo online, expandindo a experiência de luxo que já era oferecida fisicamente nos shoppings para o ambiente digital."
-          technologies={["Javascript", "Reactjs", "Faststore"]}
+         A loja BB Baterias é especializada em baterias para notebooks, fontes, telas e outros acessórios relacionados a equipamentos portáteis. Eles oferecem uma ampla variedade de baterias compatíveis com marcas como Acer, Asus, Apple, Dell, HP, Lenovo, Positivo, Samsung e Sony Vaio. A empresa destaca-se pela qualidade de seus produtos, que atendem ou excedem as especificações técnicas originais, além de oferecer uma garantia de 14 meses. Além disso, a BB Baterias conta com atendimento especializado e várias opções de pagamento e entrega rápida"
+          technologies={["Javascript", "Reactjs", "Vtex IO"]}
         />
 
       </div>

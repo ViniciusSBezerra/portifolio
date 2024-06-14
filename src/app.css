@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 
-@layer base{
-  :root{
+@layer base {
+  :root {
     --primary-color: #445964;
     --secondary-color: #263138;
     --secondary-color-dt: #1b1d1f;
@@ -23,9 +23,10 @@
   background-color: var(--secondary-color-dt);
 }
 
-.card-dark-theme{
-  background-color:var(--bg-card-dt)
+.card-dark-theme {
+  background-color: var(--bg-card-dt)
 }
+
 body {
   font-family: sans-serif;
   margin: 0;
@@ -36,16 +37,16 @@ body {
   margin: 0 auto;
 }
 
-.app{
+.app {
   background-color: #fff;
   display: flex;
 
   flex-direction: column;
-  
+
 }
 
-.app.dark-theme{
-  background-color: var(--secondary-color-dt) ;
+.app.dark-theme {
+  background-color: var(--secondary-color-dt);
   color: var(--primary-color-dt);
 }
 
@@ -55,21 +56,3 @@ p,
 h1 {
   margin: 0;
 }
-
-
-
-/* ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-}
-
-a {
-  text-decoration: none;
-} */
