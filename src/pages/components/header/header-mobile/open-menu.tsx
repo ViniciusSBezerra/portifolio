@@ -17,7 +17,7 @@ export const OpenMenu = () => {
       </ul>
 
       <button
-        className="w-[40px] h-[40px] absolute top-4 right-4 "
+        className="w-[40px] h-[40px] absolute top-8 right-4 "
         onClick={() => {
           setIsOpen(false);
         }}
