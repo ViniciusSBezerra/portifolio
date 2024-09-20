@@ -1,4 +1,3 @@
-
 import { SocialMedia } from "../social-media";
 
 export const Footer = () => {

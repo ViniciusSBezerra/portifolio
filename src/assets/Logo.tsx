@@ -1,9 +1,7 @@
-
 import { Context, useGlobalContext } from "../context";
 
 export const Logo = () => {
-
-  const { theme } = useGlobalContext() as Context
+  const { theme } = useGlobalContext() as Context;
 
   return (
     <svg

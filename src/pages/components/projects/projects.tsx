@@ -1,14 +1,13 @@
 import { CardProjects } from "./CardProjects";
 
-
 import { Title } from "../generic/title";
 
-
 export const Projects = () => {
-
-
   return (
-    <section id="projects" className=" max-w-[1440px] text-center mt-6  md:mt-12">
+    <section
+      id="projects"
+      className=" max-w-[1440px] text-center mt-6  md:mt-12"
+    >
       <Title title="Projetos que participei" />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-5 mt-6 text-left">
@@ -49,12 +48,12 @@ export const Projects = () => {
         <CardProjects
           name="Osklen"
           technologies={["Javascript", "Deno", "Preact", "Vtex IO", "Deco"]}
-
           description="A Osklen é uma renomada marca brasileira de moda, fundada em 1986 por Oskar Metsavaht. Reconhecida por sua abordagem sustentável e inspiração na natureza e na vida urbana do Rio de Janeiro, a marca oferece uma ampla gama de roupas, calçados e acessórios para homens e mulheres. Com presença internacional, a Osklen conquistou destaque pela sua combinação única de estilo contemporâneo e compromisso com a responsabilidade ambiental."
           link="https://www.osklen.com.br/"
         />
 
-        <CardProjects name="ArcelorMittal"
+        <CardProjects
+          name="ArcelorMittal"
           description="A ArcelorMittal é uma líder global em siderurgia e mineração, com operações em mais de 60 países. Oferece produtos como chapas, bobinas e barras de aço, focando em tecnologia e práticas sustentáveis. Seus produtos são vendidos principalmente através de canais corporativos e industriais."
           technologies={["Javascript", "Reactjs", "Vtex IO"]}
           link="https://loja.arcelormittal.com.br/"
@@ -63,7 +62,8 @@ export const Projects = () => {
           name="Manole"
           description="A Manole é uma conhecida livraria e editora especializada no segmento da saúde no Brasil. A empresa é destaque no mercado por fornecer materiais didáticos, livros especializados, e-books, e outros recursos educativos focados em diversas áreas da saúde, como medicina, enfermagem, odontologia, farmácia, e saúde pública, entre outras."
           technologies={["Javascript", "Reactjs", "Vtex IO"]}
-          link="https://www.manole.com.br/" />
+          link="https://www.manole.com.br/"
+        />
 
         <CardProjects
           name="bbbaterias"
@@ -72,7 +72,6 @@ export const Projects = () => {
           technologies={["Javascript", "Reactjs", "Vtex IO"]}
           link="https://www.bbbaterias.com.br/"
         />
-
       </div>
     </section>
   );

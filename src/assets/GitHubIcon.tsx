@@ -1,8 +1,7 @@
 import { Context, useGlobalContext } from "../context";
 
 export const GitHubIcon = () => {
-
-  const { theme } = useGlobalContext() as Context
+  const { theme } = useGlobalContext() as Context;
   return (
     <svg
       width="40"

@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   :root {
     --primary-color: #445964;
@@ -13,8 +12,6 @@
   }
 }
 
-
-
 .dark-theme {
   color: var(--primary-color-dt);
 }
@@ -24,7 +21,7 @@
 }
 
 .card-dark-theme {
-  background-color: var(--bg-card-dt)
+  background-color: var(--bg-card-dt);
 }
 
 body {
@@ -42,15 +39,12 @@ body {
   display: flex;
 
   flex-direction: column;
-
 }
 
 .app.dark-theme {
   background-color: var(--secondary-color-dt);
   color: var(--primary-color-dt);
 }
-
-
 
 p,
 h1 {

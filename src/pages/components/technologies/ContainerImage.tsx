@@ -1,12 +1,6 @@
-
-
 interface ContainerImageProps {
-    children: React.ReactNode
+  children: React.ReactNode;
 }
 export const ContainerImage = ({ children }: ContainerImageProps) => {
-    return (
-        <div className="max-w-[240px] h-auto">
-            {children}
-        </div>
-    )
-}
+  return <div className="max-w-[240px] h-auto">{children}</div>;
+};

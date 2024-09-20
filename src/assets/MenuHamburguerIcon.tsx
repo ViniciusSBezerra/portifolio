@@ -1,8 +1,7 @@
 import { Context, useGlobalContext } from "../context";
 
 export const MenuHamburguerIcon = () => {
-
-  const { theme } = useGlobalContext() as Context
+  const { theme } = useGlobalContext() as Context;
   return (
     <svg
       width="40"

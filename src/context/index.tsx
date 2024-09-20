@@ -9,7 +9,7 @@ import {
 
 export interface Context {
   isOpen?: boolean;
-  theme?: boolean
+  theme?: boolean;
   setIsOpen: Dispatch<SetStateAction<boolean>>;
   setTheme: Dispatch<SetStateAction<boolean>>;
   toogleMenu?: () => void;
@@ -19,10 +19,8 @@ export interface Context {
 const GlobalContext: any = createContext<Context>({
   isOpen: false,
   theme: false,
-  setIsOpen: () => { },
-  setTheme: () => { },
-
-
+  setIsOpen: () => {},
+  setTheme: () => {},
 });
 
 export const useGlobalContext = () => {
@@ -37,7 +35,7 @@ export const GlobalProvider = ({ children }: any) => {
   };
 
   useEffect(() => {
-    const localstoragetheme = localStorage.getItem('theme');
+    const localstoragetheme = localStorage.getItem("theme");
     if (localstoragetheme) {
       setTheme(localstoragetheme === "dark-theme");
     }
@@ -45,12 +43,14 @@ export const GlobalProvider = ({ children }: any) => {
 
   const handleTheme = () => {
     const newTheme = !theme;
-    localStorage.setItem('theme', newTheme ? "dark-theme" : "light-theme");
+    localStorage.setItem("theme", newTheme ? "dark-theme" : "light-theme");
     setTheme(newTheme);
   };
 
   return (
-    <GlobalContext.Provider value={{ toogleMenu, isOpen, setIsOpen, theme, setTheme, handleTheme }}>
+    <GlobalContext.Provider
+      value={{ toogleMenu, isOpen, setIsOpen, theme, setTheme, handleTheme }}
+    >
       {children}
     </GlobalContext.Provider>
   );
